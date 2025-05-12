@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionou pra mim</title>
+</head>
+
+<!-- Bootstrap & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/components/nav.css">
+<link rel="stylesheet" href="css/components/reset.css">
+<link rel="stylesheet" href="css/components/home.css">
+
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/icon.png" alt="Logo">
+            <span class="logo-text">Funcionou pra mim</span>
+        </div>
+        <div class="nav-button-container">
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a class="link-nav" href="#inicio">Início</a></li>
+                    <li><a class="link-nav" href="#cartoes">Cartões</a></li>
+                    <li><a class="link-nav" href="#atividades">Atividades</a></li>
+                    <li><a class="link-nav" href="#dicas">Dicas</a></li>
+                </ul>
+            </nav>
+            <div class="button-contato">
+                <a class="button-nav login" href="#login">Login</a>
+            </div>
+        </div>
+
+        <div class="abrir-menu" id="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar" id="closeBtn">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="link-nav" href="#inicio">Início</a></li>
+                    <li><a class="link-nav" href="#cartoes">Cartões</a></li>
+                    <li><a class="link-nav" href="#atividades">Atividades</a></li>
+                    <li><a class="link-nav" href="#dicas">Dicas</a></li>
+                    <li><a class="link-nav login" href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay-menu" id="overlay"></div>
+    </header>
+
+    <div class="home-banner">
+        <div class="home">
+            <img src="./assets/home5.png" alt="Estudando inglês" class="banner-home">
+        </div>
+    </div>
+
+    <section id="sobre" class="sobre">
+        <div class="container-sobre">
+            <div class="sobre-texto">
+                <h2>Por que esse site existe?</h2>
+                <p>
+                    Eu sei como é difícil começar do zero. Aprender inglês parecia impossível até que eu descobri algo
+                    simples: <strong>funciona praticando um pouco todo dia.</strong>
+                </p>
+                <p>
+                    Este site nasceu da minha experiência — sem promessas mágicas, só ferramentas práticas, leves e
+                    gratuitas pra te ajudar a seguir no ritmo certo.
+                </p>
+                <p class="assinatura">— Fernando</p>
+            </div>
+            <div class="sobre-imagem">
+                <img src="assets/student1.png" alt="Estudante aprendendo inglês com leveza" />
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="recursos" class="recursos">
+        <div class="recursos-header">
+            <h2>Vamos fazer um tour no que vem por ai?</h2>
+            <p>Eu criei essas ferramentas com o que realmente funcionou pra mim: prática diária, desafios curtos e dicas
+                que fazem sentido na vida real.
+                Comece com o que tiver, no seu ritmo, e bora evoluir junto.</p>
+        </div>
+
+
+        <div class="recursos-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="assets/practice.png" alt="Ferramentas de estudo" />
+                <span class="tag">Ferramentas</span>
+                <h3>Pratique com os cards</h3>
+                <p>Use flashcards interativos para memorizar vocabulário com repetição espaçada.</p>
+                <a href="#" class="card-link">Ver ferramenta</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="assets/practice2.jpeg" alt="Exercícios" />
+                <span class="tag">Exercícios</span>
+                <h3>Treine na prática</h3>
+                <p>Faça pequenos desafios diários para fixar estruturas e frases úteis.</p>
+                <a href="#" class="card-link">Fazer exercícios</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="assets/Tips2.png" alt="Dicas" />
+                <span class="tag">Dicas</span>
+                <h3>Dicas que funcionam</h3>
+                <p>Aplicações reais do dia a dia, sem enrolação. Só o que realmente te ajuda.</p>
+                <a href="#" class="card-link">Ler dicas</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="assets/Community2.png" alt="Comunidade" />
+                <span class="tag">Comunidade</span>
+                <h3>Aprenda com outros</h3>
+                <p>Compartilhe dúvidas e troque experiências com quem também está aprendendo.</p>
+                <a href="#" class="card-link">Entrar na comunidade</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Aprenda no seu ritmo</h3>
+                <p> Ferramentas e conteúdos práticos para quem quer aprender inglês<br>
+                    com leveza e consistência.</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fernando Dev. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/components/nav.js"></script>
+</body>
+
+</html>

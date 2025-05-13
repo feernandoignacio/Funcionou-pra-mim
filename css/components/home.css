@@ -148,6 +148,58 @@
 
 
 
+/*estilização de palavras em inglês*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.06);
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.highlight-tour {
+    color: #755858;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.highlight-tour::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #755858;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.highlight-tour:hover {
+    color: #755858a4;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
 
 
 /*Footer*/
@@ -222,6 +274,30 @@
     font-size: 0.85rem;
 }
 
+
+
+
+
+
+@media (max-width: 480px) {
+    .sobre {
+        padding: 30px 10px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-texto p {
+        font-size: 0.9rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
@@ -309,6 +385,37 @@
         font-size: 0.8rem;
         padding: 4px 8px;
     }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-brand,
+    .footer-social {
+        min-width: 100%;
+        justify-content: center;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        font-size: 60%;
+        gap: 40px;
+    }
 }
 
 
@@ -365,19 +472,38 @@
     .sobre-imagem img {
         border-radius: 10px;
     }
-}
 
-
-@media (max-width: 480px) {
-    .sobre {
-        padding: 30px 10px;
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
     }
 
-    .sobre-texto h2 {
-        font-size: 1.4rem;
+    .footer-brand,
+    .footer-social {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .sobre-texto p {
-        font-size: 0.9rem;
+    .footer-brand h3,
+    .footer-brand p,
+    .footer-social h4 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .social-icons {
+        justify-content: center;
+        font-size: 60%;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
     }
 }

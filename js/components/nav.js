@@ -15,6 +15,7 @@ if (idiomaIcone) {
     });
 }
 
+
 /*Menu responsivel*/
 document.addEventListener('DOMContentLoaded', () => {
     const abrirMenu = document.querySelector('.abrir-menu');

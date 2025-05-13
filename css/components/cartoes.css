@@ -1,0 +1,123 @@
+.apresentacao-ferramentas {
+    background: linear-gradient(to right, #c8e3c5, #9cad9a);
+    padding: 120px 20px 60px;
+    text-align: center;
+}
+
+.apresentacao-ferramentas h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #755858;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.apresentacao-ferramentas p {
+    font-size: 1.1rem;
+    color: #755858;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+/*--Cards expressivos--*/
+.cards-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+}
+
+.card-item {
+    background-color: #f1f3f5;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+}
+
+.card-item i {
+    font-size: 2rem;
+    color: #6c757d;
+}
+
+.card-item p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #755858;
+}
+
+
+
+
+/*--Explicação sobre os card--*/
+.ferramentas-destaque {
+    background: linear-gradient(to right, #ffffff, #eaf4ef);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.ferramentas-destaque h2 {
+    font-size: 2.2rem;
+    color: #755858;
+    margin-bottom: 10px;
+}
+
+.ferramentas-destaque p {
+    font-size: 1.1rem;
+    color: #755858;
+    margin: 40px 25px 80px 40px;
+    flex: 1;
+    min-width: 300px;
+    line-height: 30px;
+}
+
+.cards-ferramentas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-ferramenta {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-ferramenta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-ferramenta img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+.card-ferramenta h3 {
+    font-size: 1.2rem;
+    color: #755858;
+    margin-bottom: 10px;
+}
+
+.card-ferramenta p {
+    font-size: 0.95rem;
+    color: #5d5d5d;
+}

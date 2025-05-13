@@ -20,10 +20,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 
-
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/components/nav.css">
-<link rel="stylesheet" href="css/components/home.css">
+<link rel="stylesheet" href="css/components/login.css">
 <link rel="stylesheet" href="css/components/reset.css">
 
 
@@ -69,85 +68,61 @@
         <div class="overlay-menu" id="overlay"></div>
     </header>
 
-    <div class="home-banner">
-        <div class="home">
-            <img src="./assets/home5.png" alt="Estudando inglês" class="banner-home">
-        </div>
-    </div>
 
-    <section id="inicio" class="sobre">
-        <div class="container-sobre">
-            <div class="sobre-texto">
-                <h2>Por que esse site existe?</h2>
-                <p>
-                    Eu sei como é difícil começar do zero. Aprender inglês parecia impossível até que eu descobri algo
-                    simples: <strong>funciona praticando um pouco todo dia.</strong>
-                </p>
-                <p>
-                    Este site nasceu da minha experiência — sem promessas mágicas, só ferramentas práticas, leves e
-                    gratuitas pra te dar um <span class="highlight-tour">upgrade</span> no seu aprendizado, no ritmo
-                    certo.
-                </p>
-                <p class="assinatura">— Fernando</p>
+
+
+
+    <section class="container">
+
+        <div class="welcome-login">
+            <div class="image-wrapper">
             </div>
-            <div class="sobre-imagem">
-                <img src="assets/student1.png" alt="Estudante aprendendo inglês com leveza" />
+
+            <div class="content-container">
+                <h1 class="section-heading">Capacitando mentes por meio da educação<span>Digital.</span></h1>
+                <p class="section-paragraph">Cada passo em frente é um passo em direção ao conhecimento. Abrace a
+                    jornada.</p>
             </div>
         </div>
-    </section>
+
+        <div class="form-section">
+            <div class="form-wrapper">
 
 
+                <h2>Bem vindo(a)!</h2>
+                <p>Insira suas credenciais para acessar sua conta.</p>
 
+                <div class="input-container">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
 
+                <div class="remember-forgot">
+                    <div class="lembrar">
+                        <input type="checkbox" value="remember-me" id="remember-me">
+                        <label for="remember-me">Lembrar</label>
+                    </div>
 
-    <section id="recursos" class="recursos">
-        <div class="recursos-header">
-            <h2>Vamos fazer um <span class="highlight-tour">tour</span> no que vem por aí?</h2>
-            <p>Eu criei essas ferramentas com o que realmente funcionou pra mim: prática diária, desafios curtos e dicas
-                que fazem sentido na vida real.
-                De o <span class="highlight-tour">start</span> com o que tiver, no seu ritmo, e bora evoluir junto.</p>
-        </div>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
 
+                <button class="login-btn">Entrar</button>
 
-        <div class="recursos-grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="./assets/practice.png" alt="Ferramentas de estudo" />
-                <span class="tag">Ferramentas</span>
-                <h3>Pratique com os cards</h3>
-                <p>Use flashcards interativos para memorizar vocabulário com repetição espaçada.</p>
-                <a href="#" class="card-link">Ver ferramenta</a>
-            </div>
+                <div class="or-divider">ou</div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <img src="./assets/practice2.jpeg" alt="Exercícios" />
-                <span class="tag">Exercícios</span>
-                <h3>Treine na prática</h3>
-                <p>Faça pequenos desafios diários para fixar estruturas e frases úteis.</p>
-                <a href="#" class="card-link">Fazer exercícios</a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="./assets/Tips2.png" alt="Dicas" />
-                <span class="tag">Dicas</span>
-                <h3>Dicas que funcionam</h3>
-                <p>Aplicações reais do dia a dia, sem enrolação. Só o que realmente te ajuda.</p>
-                <a href="#" class="card-link">Ler dicas</a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card">
-                <img src="./assets/Community2.png" alt="Comunidade" />
-                <span class="tag">Comunidade</span>
-                <h3>Aprenda com outros</h3>
-                <p>Compartilhe dúvidas e troque experiências com quem também está aprendendo.</p>
-                <a href="#" class="card-link">Entrar na comunidade</a>
+                <button class="google-signin">
+                    <object data="./assets/google.png"></object>
+                    <span>Entrar com Google</span>
+                </button>
             </div>
         </div>
     </section>
-
 
 
 
@@ -174,6 +149,7 @@
             <p>&copy; 2025 Fernando Dev. Todos os direitos reservados.</p>
         </div>
     </footer>
+
 
 
 

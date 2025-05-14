@@ -58,6 +58,71 @@
 
 
 
+/*--Card download--*/
+.download-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0.5rem;
+    background-color: #ffffff;
+}
+
+.card-download {
+    background-color: #f1f3f5;
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: auto;
+    min-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: inherit;
+    animation: pulse 1.8s infinite;
+    box-shadow: 0 0 0 rgba(52, 152, 219, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.card-download:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(52, 152, 219, 0.3);
+}
+
+.card-download i {
+    font-size: 1.4rem;
+    color: #6c757d;
+    margin: 0;
+    padding: 0;
+}
+
+.card-download p {
+    font-size: 0.9rem;
+    color: #755858;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Efeito pulsante (mantive o mesmo) */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+
+
+
 
 /*--Explicação sobre os card--*/
 .ferramentas-destaque {
@@ -75,7 +140,18 @@
 .ferramentas-destaque p {
     font-size: 1.1rem;
     color: #755858;
-    margin: 40px 25px 80px 40px;
+    margin: 40px auto 40px auto;
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    line-height: 30px;
+}
+
+.ferramentas-destaque .bot {
+    font-size: 1.1rem;
+    color: #755858;
+    margin: 40px auto 60px auto;
+    text-align: center;
     flex: 1;
     min-width: 300px;
     line-height: 30px;
@@ -104,7 +180,7 @@
 
 .card-ferramenta img {
     width: 100%;
-    max-height: 200px;
+    max-height: 150px;
     object-fit: contain;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -120,4 +196,61 @@
 .card-ferramenta p {
     font-size: 0.95rem;
     color: #5d5d5d;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .cards-ferramentas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .cards-ferramentas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-container {
+        gap: 1rem;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .cards-ferramentas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards-container {
+        gap: 0.5rem;
+    }
+
+    .card-item,
+    .card-ferramenta {
+        padding: 1rem;
+    }
+
+    .card-ferramenta h3 {
+        font-size: 1rem;
+    }
+
+    .card-ferramenta p {
+        font-size: 0.9rem;
+    }
 }

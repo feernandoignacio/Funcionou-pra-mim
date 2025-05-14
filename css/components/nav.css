@@ -48,14 +48,19 @@ html {
 
 /* Logo */
 .logo {
-    height: 40px;
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    height: 100%;
-    width: auto;
+.logo i.bi-mortarboard {
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo i.bi-mortarboard:hover {
+    color: #c8e3c5;
+    transform: scale(1.1);
 }
 
 .logo-text {
@@ -64,7 +69,15 @@ html {
     margin-left: 0.8rem;
     font-family: "Hammersmith One", sans-serif;
     margin-top: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.logo-text:hover {
+    color: #c8e3c5;
+    transform: scale(1.1);
+}
+
+
 
 
 /* Contêiner para a navegação e o botão */

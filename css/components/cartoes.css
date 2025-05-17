@@ -20,6 +20,16 @@
 }
 
 
+/*--Alerta--*/
+.alerta {
+    color: #ffc870;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
 
 
 /*--Cards expressivos--*/
@@ -38,12 +48,8 @@
     border-radius: 8px;
     width: 300px;
     text-align: left;
-    transition: transform 0.3s ease;
 }
 
-.card-item:hover {
-    transform: translateY(-5px);
-}
 
 .card-item i {
     font-size: 2rem;
@@ -69,7 +75,7 @@
 }
 
 .card-download {
-    background-color: #f1f3f5;
+    background-color: #c8e3c5;
     padding: 0.5rem;
     border-radius: 8px;
     width: auto;

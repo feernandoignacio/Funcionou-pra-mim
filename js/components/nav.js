@@ -56,3 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+/*--Cor da nav diferente na pagina "atividades"--*/
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname.includes("atividades.html")) {
+        document.querySelector("header").classList.add("header-atividades");
+    }
+});

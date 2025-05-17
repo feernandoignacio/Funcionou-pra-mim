@@ -26,8 +26,8 @@
 <link rel="stylesheet" href="css/components/reset.css">
 <link rel="stylesheet" href="css/components/atividades.css">
 
-
 <body>
+
 
     <header class="header">
         <div class="logo">
@@ -68,62 +68,88 @@
         </div>
         <div class="overlay-menu" id="overlay"></div>
     </header>
+    </section>
+
+
+    <div class="home-banner">
+        <div class="home">
+            <img src="./assets/atividades.png" alt="Estudando inglês" class="banner-home">
+            <section class="intro-atividades">
+                <h1>Let's practice!</h1>
+                <p>Atividades rápidas pra treinar seu inglês onde e quando quiser. Sem pressão, só progresso!</p>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <!--Cards clicáveis das atividades:-->
+    <section class="atividades-grid">
+        <div class="atividade-card">
+            <i class="bi bi-chat-dots"></i>
+            <p><strong>Mini Diálogos</strong><br>Pratique com conversas do dia a dia</p>
+        </div>
+        <div class="atividade-card">
+            <i class="bi bi-pencil-square"></i>
+            <p><strong>Preencha a frase</strong><br>Complete frases com a palavra certa</p>
+        </div>
+        <div class="atividade-card">
+            <i class="bi bi-translate"></i>
+            <p><strong>Tradução Correta</strong><br>Escolha a tradução de forma certa</p>
+        </div>
+    </section>
 
 
 
 
 
-    <section class="container">
+    <!--Destaque interativo-->
+    <section class="destaque-semanal">
+        <h2>Desafio da semana</h2>
+        <p>Complete as frases sobre <strong>rotina diária</strong> e desbloqueie um bônus!</p>
+        <button class="btn-comece">Começar agora</button>
+    </section>
 
-        <div class="welcome-login">
-            <div class="image-wrapper">
-            </div>
 
-            <div class="content-container">
-                <h1 class="section-heading">Capacitando mentes por meio da educação<span>Digital.</span></h1>
-                <p class="section-paragraph">Cada passo em frente é um passo em direção ao conhecimento. Abrace a
-                    jornada.</p>
-            </div>
+    <!--Rodapé curto motivacional-->
+    <section class="motivacional">
+        <p>"Practice a little every day. Progress happens in the small steps!"</p>
+    </section>
+
+
+
+    <!--galeria de video-aulas-->
+    <section class="galeria-videos">
+        <div class="intro-videos">
+            <i class="bi bi-play-btn"></i>
+            <h2>Vídeos práticos</h2>
+            <p>Dicas rápidas e explicações simples para melhorar sua pronúncia, escuta e vocabulário.</p>
+            <a href="#">Ver todos os vídeos</a>
         </div>
 
-        <div class="form-section">
-            <div class="form-wrapper">
 
+        <div class="videos-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/bSuvOVH0aSQ" title="Exemplo 1" allowfullscreen></iframe>
+                <span class="tag">PRÁTICA</span>
+                <h3>Como treinar o listening com músicas</h3>
+            </div>
 
-                <h2>Bem vindo(a)!</h2>
-                <p>Insira suas credenciais para acessar sua conta.</p>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/NqTnQd8DT3k" title="Exemplo 2" allowfullscreen></iframe>
+                <span class="tag">PRONÚNCIA</span>
+                <h3>Dicas para falar com mais clareza</h3>
+            </div>
 
-                <div class="input-container">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password">
-                    </div>
-                </div>
-
-                <div class="remember-forgot">
-                    <div class="lembrar">
-                        <input type="checkbox" value="remember-me" id="remember-me">
-                        <label for="remember-me">Lembrar</label>
-                    </div>
-
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-
-                <button class="login-btn">Entrar</button>
-
-                <div class="or-divider">ou</div>
-
-                <button class="google-signin">
-                    <object data="./assets/google.png"></object>
-                    <span>Entrar com Google</span>
-                </button>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/U0Qgmf5g9Jw" title="Exemplo 3" allowfullscreen></iframe>
+                <span class="tag">VOCABULÁRIO</span>
+                <h3>Palavras que você já conhece (sem saber!)</h3>
             </div>
         </div>
     </section>
+
 
 
 
@@ -150,6 +176,11 @@
             <p>&copy; 2025 Fernando Dev. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+
+
+
+
 
 
 

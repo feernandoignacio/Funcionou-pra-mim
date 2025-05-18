@@ -3,29 +3,6 @@
     color: #fff;
 }
 
-
-
-/* Intro da página */
-.intro-atividades {
-    text-align: center;
-    padding: 8rem 1rem 2rem;
-    background-color: #f8f9fa;
-}
-
-.intro-atividades h1 {
-    font-size: 3.5rem;
-    color: #755858;
-    margin-bottom: 1.5rem;
-}
-
-.intro-atividades p {
-    font-size: 1.1rem;
-    color: #6c757d;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
 /*--Banner--*/
 .home-banner {
     position: relative;
@@ -243,11 +220,13 @@
 
 
 .videos-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    justify-content: center;
     flex: 3;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .video-card {

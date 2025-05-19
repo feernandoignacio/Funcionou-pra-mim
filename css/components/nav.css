@@ -162,44 +162,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  Menu Responsivo  */
 .abrir-menu {
     display: none;
@@ -397,6 +359,31 @@ html {
         justify-content: center;
     }
 }
+
+
+
+@media (max-width: 767px) {
+    .abrir-menu {
+        display: block;
+        font-size: 2.4rem;
+        color: #f0f0f0;
+        cursor: pointer;
+        position: fixed;
+        right: 1.8rem;
+        z-index: 101;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Oculta em 768px ou mais */
+@media (min-width: 768px) {
+    .abrir-menu {
+        display: none !important;
+    }
+}
+
+
+
 
 @media (max-width: 1020px) {
     header .nav-box ul {

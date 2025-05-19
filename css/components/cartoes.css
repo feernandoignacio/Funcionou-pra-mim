@@ -1,3 +1,9 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+
 .apresentacao-ferramentas {
     background: linear-gradient(to right, #c8e3c5, #9cad9a);
     padding: 120px 20px 60px;
@@ -146,7 +152,7 @@
 .ferramentas-destaque p {
     font-size: 1.1rem;
     color: #755858;
-    margin: 40px auto 40px auto;
+    margin: 40px auto;
     text-align: center;
     flex: 1;
     min-width: 300px;
@@ -177,11 +183,11 @@
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-ferramenta:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
 .card-ferramenta img {
@@ -192,20 +198,28 @@
     border-radius: 8px;
 }
 
+.card-ferramenta .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
 .card-ferramenta h3 {
     font-size: 1.2rem;
     color: #755858;
     margin-bottom: 10px;
+    word-break: break-word;
 }
 
 .card-ferramenta p {
     font-size: 0.95rem;
     color: #5d5d5d;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
-
-
-
 
 
 
@@ -214,11 +228,53 @@
 
 @media (max-width: 768px) {
     .cards-ferramentas {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .card-item {
+        width: 100%;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .card-item p {
+        font-size: 0.95rem;
+    }
+
+
+    /*--Cards bot--*/
+
+    .cards-ferramentas {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 16px;
+    }
+
+    .card-ferramenta {
+        width: 48%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card-ferramenta img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-ferramenta h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-ferramenta p {
+        font-size: 0.95rem;
     }
 }
 

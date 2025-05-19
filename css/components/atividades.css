@@ -55,12 +55,13 @@
 /* Grid de atividades */
 .atividades-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
 
 .atividade-card {
     background-color: #f1f3f5;
@@ -82,6 +83,8 @@
     color: #555;
     font-size: 1rem;
 }
+
+
 
 /* Destaque da semana */
 .destaque-semanal {
@@ -158,6 +161,50 @@
     gap: 3rem;
 }
 
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex: 3;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+    max-width: 300px;
+    flex: 1 1 280px;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.video-card .tag {
+    display: inline-block;
+    background: #cce3dc;
+    color: #155724;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.video-card h3 {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.3;
+}
+
+
 .intro-videos i.bi-play-btn {
     font-size: 2.5rem;
     color: #007bff;
@@ -217,54 +264,14 @@
 }
 
 
-.videos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    flex: 3;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.video-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    padding: 1rem;
-    max-width: 300px;
-    flex: 1 1 280px;
-}
-
-.video-card iframe {
-    width: 100%;
-    height: 180px;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-}
-
-.video-card .tag {
-    display: inline-block;
-    background: #cce3dc;
-    color: #155724;
-    font-size: 0.75rem;
-    font-weight: bold;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
-}
-
-.video-card h3 {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.3;
-}
 
 
 
 
 /* Responsivo para celulares e tablets */
-@media (max-width: 800px) {
+
+@media (max-width: 834px) {
     .intro-atividades {
         top: 60%;
         left: 5%;
@@ -289,6 +296,34 @@
     .home-banner {
         height: 100vh;
     }
+
+    .video-card {
+        min-height: 440px;
+        max-width: 150px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .videos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .video-card .tag {
+        padding: 0;
+        margin: 0;
+    }
+
+    .video-card h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .video-card p {
+        margin-top: auto;
+    }
 }
 
 
@@ -312,6 +347,72 @@
         margin-top: 0;
         max-width: 220px;
         line-height: 1.3;
+    }
+
+    .atividades-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding: 0;
+        gap: 20px;
+    }
+
+
+    .video-card {
+        min-height: 420px;
+        max-width: 160px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .videos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .video-card .tag {
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-brand,
+    .footer-social {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-brand h3,
+    .footer-brand p,
+    .footer-social h4 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .social-icons {
+        justify-content: center;
+        font-size: 60%;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
     }
 }
 
@@ -340,4 +441,27 @@
     .home-banner {
         height: 85vh;
     }
+
+    .videos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.7rem;
+    }
+
+    .video-card {
+        min-height: 400px;
+        max-width: 120px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .video-card .tag {
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
 }

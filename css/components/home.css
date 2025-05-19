@@ -426,20 +426,29 @@
 
     .home-banner {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto !important;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .home .banner-home {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
         display: block;
+        object-fit: cover;
+        object-position: center;
+        margin: 0;
+        padding: 0;
     }
 
     .sobre {
-        padding: 40px 15px;
+        padding: 0 15px;
+        margin-top: 50px;
         scroll-margin-top: 60px;
     }
 
@@ -505,5 +514,36 @@
 
     .footer-bottom {
         margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 834px) {
+    .home-banner {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto !important;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .banner-home {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sobre {
+        padding: 0 15px;
+        margin-top: 70px;
+        scroll-margin-top: 60px;
     }
 }

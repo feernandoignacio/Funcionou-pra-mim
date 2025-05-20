@@ -25,9 +25,11 @@
 <link rel="stylesheet" href="css/components/login.css">
 <link rel="stylesheet" href="css/components/reset.css">
 <link rel="stylesheet" href="css/components/atividades.css">
-
+<link rel="stylesheet" href="css/components/praticar.css">
 
 <body>
+
+
 
     <header class="header">
         <div class="logo">
@@ -73,83 +75,58 @@
 
 
 
-    <section class="container">
 
-        <div class="welcome-login">
-            <div class="image-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Atividades-->
+    <section class="atividade-interativa">
+        <h2>Desafio da Semana</h2>
+        <p>Complete as frases com as palavras corretas sobre <strong>rotina diária</strong> e ganhe um bônus!</p>
+
+        <form class="atividade-form">
+            <div class="frase">
+                <label>1. I usually ______ up at 7 a.m.</label>
+                <input type="text" name="resposta1" placeholder="Digite a palavra correta">
             </div>
 
-            <div class="content-container">
-                <h1 class="section-heading">Capacitando mentes por meio da educação<span>Digital.</span></h1>
-                <p class="section-paragraph">Cada passo em frente é um passo em direção ao conhecimento. Abrace a
-                    jornada.</p>
+            <div class="frase">
+                <label>2. Then, I ______ a shower and get dressed.</label>
+                <input type="text" name="resposta2" placeholder="Digite a palavra correta">
             </div>
-        </div>
 
-        <div class="form-section">
-            <div class="form-wrapper">
-
-
-                <h2>Bem vindo(a)!</h2>
-                <p>Insira suas credenciais para acessar sua conta.</p>
-
-                <div class="input-container">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password">
-                    </div>
-                </div>
-
-                <div class="remember-forgot">
-                    <div class="lembrar">
-                        <input type="checkbox" value="remember-me" id="remember-me">
-                        <label for="remember-me">Lembrar</label>
-                    </div>
-
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-
-                <button class="login-btn">Entrar</button>
-
-                <div class="or-divider">ou</div>
-
-                <button class="google-signin">
-                    <object data="./assets/google.png"></object>
-                    <span>Entrar com Google</span>
-                </button>
+            <div class="frase">
+                <label>3. I ______ breakfast with my family.</label>
+                <input type="text" name="resposta3" placeholder="Digite a palavra correta">
             </div>
-        </div>
+
+            <div class="frase">
+                <label>4. I ______ to work at 8 a.m.</label>
+                <input type="text" name="resposta4" placeholder="Digite a palavra correta">
+            </div>
+
+            <div class="frase">
+                <label>5. I usually ______ home around 6 p.m.</label>
+                <input type="text" name="resposta5" placeholder="Digite a palavra correta">
+            </div>
+
+            <button type="submit" class="btn-verificar">Verificar respostas</button>
+            <p class="feedback"></p>
+        </form>
     </section>
 
 
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h3>Aprenda no seu ritmo</h3>
-                <p> Ferramentas e conteúdos práticos para quem quer aprender inglês<br>
-                    com leveza e consistência.</p>
-            </div>
-
-            <div class="footer-social">
-                <h4>Redes sociais</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 Fernando Dev. Todos os direitos reservados.</p>
-        </div>
-    </footer>
 
 
 
@@ -159,6 +136,13 @@
 
 
 
+
+
+
+
+
+
+    <script src="js/components/atividades.js"></script>
     <script src="js/components/nav.js"></script>
 </body>
 

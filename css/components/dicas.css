@@ -1,0 +1,278 @@
+/*--Dicas introdutorias--*/
+.dicas-section {
+    padding: 60px 20px;
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+    text-align: center;
+}
+
+
+.dicas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dicas-section h2 {
+    font-size: 2rem;
+    color: #755858;
+    margin-bottom: 40px;
+}
+
+.dicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.dica-card {
+    background-color: #f8f8f8;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+
+.dica-card i {
+    font-size: 2rem;
+    color: #5c777d;
+    margin-bottom: 15px;
+}
+
+.dica-card h3 {
+    font-size: 1.2rem;
+    color: #755858;
+    margin-bottom: 10px;
+}
+
+.dica-card p {
+    font-size: 1rem;
+    color: #755858;
+    line-height: 1.4;
+}
+
+
+
+
+/*--Texto sobre ingles ser comum--*/
+
+.secao-ja-fala {
+    background: linear-gradient(to bottom, #ffffff, #eaf4ef);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container-ja-fala {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.titulo-ja-fala {
+    font-size: 2rem;
+    color: #4d7c6e;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.intro-ja-fala {
+    font-size: 1.2rem;
+    color: #755858;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.bloco-narrativa p {
+    font-size: 1.05rem;
+    color: #755858;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    text-indent: 1.2rem;
+}
+
+.bloco-narrativa strong {
+    color: #4d7c6e;
+    font-weight: 600;
+}
+
+.conclusao-narrativa {
+    font-size: 1.1rem;
+    color: #755858;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+
+/*--Dicas  correspondente as do inicio--*/
+.blocos-detalhados {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 1rem;
+    background: #fdfdfd;
+}
+
+.bloco-dica {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.bloco-dica.inverso {
+    flex-direction: row-reverse;
+}
+
+.texto {
+    flex: 1;
+    min-width: 260px;
+}
+
+.texto h3 {
+    font-size: 1.6rem;
+    color: #755858;
+    margin-bottom: 0.5rem;
+}
+
+.texto p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.destaque {
+    font-size: 3.4rem;
+    color: #5c777da6;
+    text-align: center;
+}
+
+
+
+/*--Dica extra de dar significado as coisas--*/
+.explore-casa {
+    background: linear-gradient(145deg, #9cad9a, #c8e3c5);
+    padding: 3rem 1rem;
+    border-radius: 16px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+.explore-casa h2 {
+    font-size: 2rem;
+    color: #755858;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.explore-casa p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.dica-box {
+    background-color: #c8e3c5;
+    border-left: 6px solid #9cad9a;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.dica-box h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #755858;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bloco-interativo {
+    background-color: #e8f0fe;
+    border-left: 6px solid #c8e3c5;
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bloco-interativo h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #9cad9a;
+}
+
+.reflexao-final {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #c8e3c5;
+    border-left: 6px solid #9cad9a;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+
+/*--Como traduzir--*/
+.aprendizado-contextual {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    font-family: "Hammersmith One", 'Poppins', sans-serif;
+}
+
+.titulo-secao {
+    font-size: 1.8rem;
+    color: #4d7c6e;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.etapas-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.etapa {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.etapa-icone {
+    font-size: 2.5rem;
+    color: #5c777d;
+    margin-bottom: 1rem;
+}
+
+.etapa h3 {
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 0.8rem;
+}
+
+.etapa p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}

@@ -86,67 +86,74 @@
 
 
 
-/* Destaque da semana */
-.destaque-semanal {
+
+
+/*--Botoes de atividades--*/
+.cta-estudo-pratica {
+    background: linear-gradient(to right, #ffffff, #eaf4ef);
+    padding: 3rem 1.5rem;
     text-align: center;
-    background-color: #c8e3c5;
-    padding: 3rem 1rem;
-    margin-top: 3rem;
     border-radius: 12px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.destaque-semanal h2 {
-    font-size: 1.8rem;
-    color: #755858;
-    margin-bottom: 0.5rem;
+.cta-conteudo {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.destaque-semanal p {
-    color: #6c757d;
-    margin-bottom: 1rem;
-}
-
-.btn-comece {
-    background-color: #ffc870;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #fff;
-    font-weight: bold;
-    animation: pulse 1.5s infinite;
-}
-
-.btn-comece:hover {
-    background-color: #ffc870c2;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Frase motivacional */
-.motivacional {
-    text-align: center;
-    font-style: italic;
-    margin: 3rem auto 2rem;
+.cta-conteudo p {
     font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.texto-button {
+    font-weight: 500;
     color: #444;
 }
+
+.cta-botoes {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.cta-botoes a {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-estudar {
+    background-color: #4d7c6e;
+    color: #fff;
+}
+
+.btn-estudar:hover {
+    background-color: #3c6359;
+    transform: translateY(-2px);
+}
+
+.btn-praticar {
+    background-color: #755858;
+    color: #fff;
+}
+
+.btn-praticar:hover {
+    background-color: #5e4545;
+    transform: translateY(-2px);
+}
+
+
 
 
 
@@ -338,16 +345,17 @@
     }
 
     .intro-atividades h1 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         margin-bottom: 8px;
     }
 
     .intro-atividades p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-top: 0;
         max-width: 220px;
         line-height: 1.3;
     }
+
 
     .atividades-grid {
         display: grid;
@@ -356,7 +364,6 @@
         padding: 0;
         gap: 20px;
     }
-
 
     .video-card {
         min-height: 420px;

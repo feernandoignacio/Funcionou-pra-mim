@@ -1,3 +1,35 @@
+.apresentacao-praticar {
+    background: linear-gradient(to right, #c8e3c5, #9cad9a);
+    padding: 120px 20px 60px;
+    text-align: center;
+}
+
+.apresentacao-praticar h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #755858;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.apresentacao-praticar p {
+    font-size: 1.1rem;
+    color: #755858;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+/*--atividades--*/
 .atividade-interativa {
     padding: 2rem;
     background: #f9f9f9;

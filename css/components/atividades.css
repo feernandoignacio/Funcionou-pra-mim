@@ -87,71 +87,96 @@
 
 
 
-
-/*--Botoes de atividades--*/
-.cta-estudo-pratica {
-    background: linear-gradient(to right, #ffffff, #eaf4ef);
-    padding: 3rem 1.5rem;
+/*--Orientação e botões de atividades--*/
+.orientacao-atividades {
+    background: linear-gradient(to right, #f7fdfa, #e6f2ee);
+    padding: 60px 20px;
     text-align: center;
-    border-radius: 12px;
-    margin: 3rem auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #d0e0d5;
 }
 
-.cta-conteudo {
-    max-width: 700px;
+.conteudo-orientacao {
+    max-width: 800px;
     margin: 0 auto;
+    color: #4d5d53;
 }
 
-.cta-conteudo p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
+.orientacao-atividades h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #446658;
+}
+
+.orientacao-atividades p {
+    font-size: 1.05rem;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.texto-button {
-    font-weight: 500;
-    color: #444;
+.orientacao-atividades i {
+    color: #6c757d;
+}
+
+.exemplo-fluxo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 30px 0;
+    font-size: 1.1rem;
+    color: #3e5046;
+    flex-wrap: wrap;
+}
+
+.exemplo-fluxo div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .cta-botoes {
     display: flex;
-    gap: 1.5rem;
     justify-content: center;
+    gap: 1.5rem;
+    margin-top: 25px;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
 }
 
-.cta-botoes a {
-    padding: 0.8rem 2rem;
-    border: none;
+.btn-estudar,
+.btn-praticar {
+    padding: 12px 34px;
     border-radius: 8px;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: 600;
     font-size: 1rem;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background 0.3s ease;
 }
 
 .btn-estudar {
-    background-color: #4d7c6e;
-    color: #fff;
+    background-color: #5ba87c;
+    color: white;
 }
 
 .btn-estudar:hover {
-    background-color: #3c6359;
-    transform: translateY(-2px);
+    background-color: #5ba87cc2;
 }
 
 .btn-praticar {
-    background-color: #755858;
-    color: #fff;
+    background-color: #716452;
+    color: white;
 }
 
 .btn-praticar:hover {
-    background-color: #5e4545;
-    transform: translateY(-2px);
+    background-color: #716452cb;
 }
+
+.reforco {
+    font-style: italic;
+    margin-top: 30px;
+    color: #345e50;
+    font-weight: 500;
+}
+
 
 
 

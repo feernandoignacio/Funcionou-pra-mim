@@ -295,6 +295,23 @@ input[type="checkbox"]:checked::before {
 }
 
 
+.criar-conta {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #755858;
+}
+
+.criar-conta a {
+    color: #755858;
+    font-weight: bold;
+}
+
+.criar-conta a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 
